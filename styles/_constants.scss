@@ -1,0 +1,7 @@
+$maincolor: #686de0;
+$mainpad: 20px;
+
+@mixin flexcenter{
+    display:flex;
+    justify-content: center;
+  }
