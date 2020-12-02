@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8" />
+        <title>My To Do List</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+        <script defer src="api-client.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <!--HEADER-->
+
+    <body>
+        <div class="wrapper">
+            <header class="header__logo">
+                <h1>My To Do List</h1>
+            </header>
+
+            <main class="toDoList">
+
+                <div id="toDoList__Menu">
+                    <input type="text" id="toDoItem" placeholder="Clean up the garage..">
+                    <button id="addItem" class="btnAdd"><i class="fa fa-plus"></i></button>
+                    <button id="toDoList__Reset" class="btnRmAll"><i class="fa fa-trash"></i> Remove All</button>
+                </div>
+
+                <div id="toDoList__display">
+
+                </div>
+
+            </main>
+        </div>
+
+
+    </body>
+
+</html>

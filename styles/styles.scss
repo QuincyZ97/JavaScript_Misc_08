@@ -1,0 +1,171 @@
+@import "./constants";
+// >>>>>>>>>>>>>>>>>  CSS MADE FOR WIDESCREEN PC <<<<<<<<<<<<<<<<<<<
+/* RESET */
+* { 
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat;
+}
+
+body {
+  height: auto;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  
+  .wrapper{
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    background: rgb(42,177,226);
+    background: linear-gradient(180deg, rgba(42,177,226,1) 20%, rgba(255,255,255,1) 25%);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+}
+
+.header__logo {
+  height: auto;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1vw;
+  color: white;
+  font-weight: bold;
+}
+
+.toDoList {
+  padding: 20px;
+  font-size: 1.3vw;
+  height: auto;
+  min-height: 803px;
+  margin-bottom: 20px;
+}
+
+#toDoList__Menu {
+  position: relative;
+  display: flex;
+
+  input {
+    position: absolute;
+    left: 27%;
+    border: none;
+    border-radius: 25px;
+    width: 43%;
+    height: 120%;
+    padding-right: 50px;
+    font-size: 1vw;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+
+}
+
+#toDoList__display{
+  margin-top: 25px;
+
+  ul {
+    display: inline-flexbox;
+    list-style-type: none;
+
+    li{
+      width: 900px;
+      height: 70px;
+      padding-left: 70px;
+      padding-right: 70px;
+      text-align: center;
+      background-color: whitesmoke;
+      border-left: #1bff6d solid 10px;
+      border-radius: 0px 25px 25px 0px;
+    }
+  }
+}
+
+.li__wrapper{
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 0px 25px 25px 0px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+/* ============= BTN STYLING ============= */
+
+.btnAdd{
+    position: absolute;
+    right: 25%;
+    border: none;
+    background-color: rgba(0, 33, 33, 0);
+    padding: 12px 16px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    outline: none;
+    color: white;
+  }
+
+  .btnRmAll{
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff2e1b;
+    padding: 12px 16px;
+    position: relative;
+    top: 7px;
+    left: 85%;
+    font-size: 0.781vw;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btnRmAll:hover {
+    background-color: #ff7c70;
+  }
+
+  .btnRm{
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 1.8vw;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    i:hover{
+      color: #ff2e1b;
+    }
+  }
+
+  .liCheckbox{
+    transform: scale(2.5);
+    position: absolute;
+    top: 27px;
+    left: 30px;
+  }
+
+
+  :checked + li {
+    text-decoration: line-through;
+    color:gray;
+  }
+
+li:hover {
+  cursor: pointer;
+}
+
+/* ============= TABLET ============= */
+@media (min-width: 768px) {
+}
+
+/* =============DESKTOP============== */
+@media (min-width: 1024px) {
+}
+
+/* ============ DESKTOP - EXTRA WIDE ======================*/
+@media (min-width: 1920px) {
+  html {
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+}
